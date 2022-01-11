@@ -1,6 +1,18 @@
 <template>
   <div id="app">
   <app-header/>
+  <!-- <slot></slot> -->
+  <div v-if="!!awesome">
+    Welcome!
+    <div>
+      <button @click="begin">
+        Start
+      </button>
+    </div>
+  </div>
+  <div v-if="!awesome">
+    Components
+  </div>
   <app-footer/>
   </div>
 </template>
@@ -18,6 +30,17 @@ export default {
   components: {
     AppHeader,
     AppFooter
+  },
+  props:{
+    awesome: {
+      type: Boolean,
+      default: true
+    }
+  }, 
+  methods: {
+    begin() {
+      this.awesome=!this.awesome
+    }
   }
 }
 </script>
