@@ -1,11 +1,13 @@
 <template>
   <div id="app">
   <app-header/>
+  <app-footer/>
   </div>
 </template>
 
 <script>
 import AppHeader from '../src/components/AppHeader'
+import AppFooter from '../src/components/AppFooter'
 export default {
   name: 'app',
   data () {
@@ -14,7 +16,8 @@ export default {
     }
   },
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   }
 }
 </script>
