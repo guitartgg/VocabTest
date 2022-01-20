@@ -1,6 +1,16 @@
 <template>
-<div class="image-container">IMAGE container</div>
+<div class="image-container">
+  <img class="image-container" src="../assets/child-soccer.jpg">
+</div>
 </template>
+<script>
+import Image1 from "../assets/child-soccer.jpg"
+export default {
+  props:{
+    message:String
+  }
+}
+</script>
 <style>
 .image-container {
     background: lightgray;
