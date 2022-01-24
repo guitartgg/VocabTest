@@ -5,11 +5,7 @@
 </template>
 <script>
 import Image1 from "../assets/child-soccer.jpg"
-export default {
-  props:{
-    message:String
-  }
-}
+export default {}
 </script>
 <style>
 .image-container {
@@ -17,6 +13,6 @@ export default {
     width: 300px;
   height: 250px;
   border-radius: 25px;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 </style>
