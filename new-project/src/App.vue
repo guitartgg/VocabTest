@@ -11,7 +11,7 @@
     </div>
   </div>
   <div v-if="!awesome">
-    Components
+    <images-container/>
   </div>
   <app-footer/>
   </div>
@@ -20,6 +20,7 @@
 <script>
 import AppHeader from '../src/components/AppHeader'
 import AppFooter from '../src/components/AppFooter'
+import ImagesContainer from '../src/components/ImagesContainer'
 export default {
   name: 'app',
   data () {
@@ -29,7 +30,8 @@ export default {
   },
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    ImagesContainer
   },
   props:{
     awesome: {
