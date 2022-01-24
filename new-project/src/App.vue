@@ -1,11 +1,26 @@
 <template>
   <div id="app">
   <app-header/>
+  <!-- <slot></slot> -->
+  <div v-if="!!awesome">
+    Welcome!
+    <div>
+      <button @click="begin">
+        Start
+      </button>
+    </div>
+  </div>
+  <div v-if="!awesome">
+    <images-container/>
+  </div>
+  <app-footer/>
   </div>
 </template>
 
 <script>
 import AppHeader from '../src/components/AppHeader'
+import AppFooter from '../src/components/AppFooter'
+import ImagesContainer from '../src/components/ImagesContainer'
 export default {
   name: 'app',
   data () {
@@ -14,7 +29,20 @@ export default {
     }
   },
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter,
+    ImagesContainer
+  },
+  props:{
+    awesome: {
+      type: Boolean,
+      default: true
+    }
+  }, 
+  methods: {
+    begin() {
+      this.awesome=!this.awesome
+    }
   }
 }
 </script>
