@@ -4,8 +4,8 @@
 <div class="container">
     <image-container class="item"/>
     <image-container class="item"/>
-    <image-container class="item" :message="msg"/>
-    <image-container class="item"></image-container>
+    <image-container class="item"/>
+    <image-container class="item"/>
     <!-- <img src="this.Image1"> -->
     <image-container class="item" v-for="item in imgArray2" :key="item.imgArray2" src="item.imgArray2">{{item.imgArray2}}</image-container>
     <!-- <button @click="test()">test</button> -->
@@ -60,6 +60,13 @@ imgArray[3].src = Image4;
 .container{
     display:flex; 
     flex-direction: row;
+     flex-wrap: wrap;
+justify-content: center;
+}
+.item {
+  order: 5;
+  margin: 1rem;
+ 
 }
 #speaker{
   height: 4rem;
