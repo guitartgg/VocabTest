@@ -6,9 +6,7 @@
     <image-container class="item"/>
     <image-container class="item"/>
     <image-container class="item"/>
-    <!-- <img src="this.Image1"> -->
     <!-- <image-container class="item" v-for="item in imgArray2" :key="item.imgArray2" src="item.imgArray2">{{item.imgArray2}}</image-container> -->
-    <!-- <button @click="test()">test</button> -->
     </div>
   </div>
 </template>
