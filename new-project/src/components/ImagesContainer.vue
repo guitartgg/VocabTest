@@ -23,8 +23,6 @@ export default {
   components: {
     ImageContainer
   },
-  methods: {
-  }
 };
 </script>
 <style>

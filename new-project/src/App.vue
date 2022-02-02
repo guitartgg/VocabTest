@@ -13,13 +13,11 @@
   <div v-if="!awesome">
     <images-container/>
   </div>
-  <app-footer/>
   </div>
 </template>
 
 <script>
 import AppHeader from '../src/components/AppHeader'
-import AppFooter from '../src/components/AppFooter'
 import ImagesContainer from '../src/components/ImagesContainer'
 export default {
   name: 'app',
@@ -30,7 +28,6 @@ export default {
   },
   components: {
     AppHeader,
-    AppFooter,
     ImagesContainer
   },
   props:{
